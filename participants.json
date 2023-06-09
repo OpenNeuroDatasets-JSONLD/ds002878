@@ -1,18 +1,40 @@
 {
     "age": {
         "Description": "age of the participant",
-        "Units": "years"
+        "Units": "years",
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:Age",
+                "Label": ""
+            }
+        }
     },
     "sex": {
         "Description": "sex of the participant",
         "Levels": {
             "M": "male",
             "F": "female"
+        },
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:Sex",
+                "Label": ""
+            },
+            "Levels": {
+                "F": {
+                    "TermURL": "snomed:248152002",
+                    "Label": ""
+                },
+                "M": {
+                    "TermURL": "snomed:248153007",
+                    "Label": ""
+                }
+            }
         }
     },
     "group": {
         "Description": "membership of participant",
-        "Levels":{
+        "Levels": {
             "soccer": "actively playing soccer for at least 10 years "
         }
     },
